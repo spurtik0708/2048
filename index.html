@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="splash" class="screen">
+            <h1>2048</h1>
+            <button id="start" onclick="start()">New Game</button>
+        </div>
+        <div id="pause" class="screen">
+            <h1>Paused</h1>
+            <button onclick="reset()">Reset</button>
+            <button onclick="resume()">Continue</button>
+        </div>
+        <div id="end" class="screen">
+            <h1>Game Over</h1>
+            <p>Your Score: <span id="finalScore">0</span></p>
+            <button onclick="start()">Play Again</button>
+        </div>
+        <div id="game" class="screen">
+            <h1>2048</h1>
+            <div id="info">Score: <span id="score">0</span></div>
+            <div id="gamearea">
+                <div class="element"></div>
+<div class="element"></div>
+<div class="element"></div>
+<div class="element"></div>
+<div class="element"></div>
+<div class="element"></div>
+<div class="element"></div>
+<div class="element"></div>
+<div class="element"></div>
+<div class="element"></div>
+<div class="element"></div>
+<div class="element"></div>
+<div class="element"></div>
+<div class="element"></div>
+<div class="element"></div>
+<div class="element"></div>
+            </div>
+        </div>
+    </div>
+    <div id="control">
+        <h2>Control</h2>
+        <button onclick="left()">Left</button>
+        <button onclick="up()">Up</button>
+        <button onclick="down()">Down</button>
+        <button onclick="right()">Right</button>
+    </div>
+    <p>You can also use Arrow keys!</p>
+    <script src="script.js"></script>
+</body>
+</html>
